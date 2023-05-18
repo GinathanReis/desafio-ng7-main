@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
@@ -14,7 +18,31 @@
         <div id="bnt_logo" class="navbnt">
             <h2>logo</h2>
         </div>
-        <div id="bnt_dashboard" class="navbnt"></div>
+        <div id="bnt_dashboard" class="navbnt" onclick="bnt_dashboard()">
+           <img src="imagens/icone11.png
+           " alt="" id="imagem_dashboard">
+           <h2 id="h2_bnt_dashboard" >Dashboard</h2>
+        </div>
+
+        <div class="navbnt" id="bntINS" onclick="bnt_institutions()" >
+            <img src="imagens/icone6.png" alt="" id="imagemInst" >
+            <h2 id="H2inst"> institutions </h2>
+        </div>
+
+        <div class="navbnt" id="bntKPIS" onclick="bnt_KPIs()">
+            <img src="imagens/icone7.png" alt="" id="imagemKPIS">
+            <h2 id="h2_KPIS"> KPIs</h2>
+        </div>
+
+            <div  class="navbnt" id="bnt_config">
+                <img src="imagens/icone8.png" alt="">
+            </div>
+            <div class="navbnt">
+                <img src="imagens/icone9.png" alt="" id="bnt_Alert">
+            </div>
+            <div class="navbnt"><img src="imagens/icone10.png" alt="" id="bnt_perfil"></div>
+        
+
         </nav>
         <section  id="dashboard">
          <header id="inftop">

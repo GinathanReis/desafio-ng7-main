@@ -3,6 +3,8 @@ margin: 0px;
 padding: 0px;
 }
 
+
+
 body{
 background-color: #747F8C;
 height:100vh;
@@ -13,16 +15,18 @@ justify-content:center;
 .sistema{
     height: 700px;
     width: 1400px;
-    background-color: #1d1f20;
     display: flex;
     border-radius: 5px;
-    
+    background-color: #F2F2F2;
     
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 #menu{
     height: 100%;
     background-color: #8D9AA6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .navbnt{
 width: 100px;
@@ -31,16 +35,34 @@ height: 100px;
 display: flex;
 align-items: center;
 justify-content: center;
+flex-direction: column;
+cursor: pointer;
 }
+.navbnt>img{
+height: 40px;
+margin: 5px;
+filter: brightness(0) invert(1);
+}
+
+.navbnt:hover img {
+transform: scale(1.3);
+transition: 0.2s;
+
+}
+
+
 .navbnt>h2{
 color: white;
 text-transform: uppercase;
 font-family: Arial, Helvetica, sans-serif;
 font-size: 10px;
+
 }
 
-#bnt_dashboard{
-background-color:#F2F2F2;;
+#bnt_institutions:hover{
+    background-color:#F2F2F2;
+    color: #828284;
+    
 }
 
 
@@ -51,7 +73,10 @@ background-color:#F2F2F2;;
     padding-left: 50px;
     padding-right: 50px;
     overflow-y:scroll;
+    display: none;
+    
 }
+
 #inftop{
 display: flex;
 flex-direction: row;
@@ -84,6 +109,7 @@ color: white;
     justify-content:space-between;
     align-items: center;
     flex-wrap: wrap;
+    
 }
 .CardDatabase1{
 height: 120px;
@@ -93,15 +119,19 @@ background-color: white;
 display: flex;
 align-items: center;
 justify-content:center;
-
+animation: bounceIn;
+animation-duration: 1s;
 }
 .CardDatabase1>img{
 height: 30px;
+animation: bounceIn;
+animation-duration: 2s;
 }
 .CardDatabase1>div>p{
 font-family: Arial, Helvetica, sans-serif;
 color: #828284;
 margin: 10px;
+
 }
 .NdataCard{
 font-size: 25px;
@@ -111,23 +141,28 @@ font-size: 25px;
  margin-top: 20px;
 display: flex;
 justify-content:space-between;
+flex-wrap: wrap;
 }
 #ValueAnalysis{
 height: 450px;
 width: 550px;
 background-color: white;
 padding: 20px;
+margin-bottom: 10px;
+
 }
 #graficos2e3{
 display: flex;
 flex-direction: column;
 justify-content: space-between;
 
+
 }
 #attendance{
     height: 240px;
     width: 550px;
     background-color: white;
+    
 }
 #CustomerSatisfaction{
     height: 240px;
