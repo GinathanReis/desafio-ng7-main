@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="sistema">
+        <nav id="menu" >
+        <div id="bnt_logo" class="navbnt">
+            <h2>logo</h2>
+        </div>
+        <div id="bnt_dashboard" class="navbnt"></div>
+        </nav>
+        <section  id="dashboard">
+         <header id="inftop">
+            <h1> KPI Dashboard</h1>
+            <div>
+                <div id="selectop" > 
+                    <select id="OpInstitute" >
+                        <option value="">Institute</option>
+                        <option value="">2019-2020</option>
+                        <option value="">2021-2023</option>                      
+                      </select>
+                      <select id="Opdata">
+                        <option value="">2017-2018</option>
+                        <option value="">2019-2020</option>
+                        <option value="">2021-2023</option>                      
+                      </select>
+                </div>
+
+            </div>
+         </header>
+
+        <section id="database1">
+            <div class="CardDatabase1">
+                <img src="imagens/icone1.png" alt="">
+                <div>
+                    <p> Current Students</p>
+                    <p id="NCurrentStudents" class="NdataCard"> 2,119 </p>
+                </div>
+            </div>
+            <div class="CardDatabase1">
+                <img src="imagens/icone2.png" alt="">
+                <div>
+                    <p> Students Enrolled </p>
+                    <p id="NStudentsEnrolled"  class="NdataCard" > 3,119 </p>
+                </div>
+            </div>
+            <div class="CardDatabase1">
+                <img src="imagens/icone3.png" alt="">
+                <div>
+                    <p> Cumulative <br> Graduates</p>
+                    <p id="CumulativeGraduates" class="NdataCard" > 20,867 </p>
+                </div>
+            </div>
+            <div class="CardDatabase1">
+                <img src="imagens/icone4.png" alt="">
+                <div>
+                    <p> Cumulative <br>
+                        Students Enrolled
+                    </p>
+                    <p id="NStudentsEnrolled" class="NdataCard" > 25,600 </p>
+                </div>
+            </div>
+            <div class="CardDatabase1">
+                <img src="imagens/icone5.png" alt="">
+                <div>
+                    <p> Accreditationss</p>
+                    <p id="NCurrentStudents" class="NdataCard" > 12 </p>
+                </div>
+            </div>
+        </section>
+        <section class="SgraficosD1" >
+            <div>
+                <div id="ValueAnalysis">
+                    <canvas id="myChart"></canvas>
+                </div>
+            </div>
+            <div id="graficos2e3">
+                <div id="attendance">
+                    <canvas id="myChart2"></canvas>
+                </div>
+                <div id="CustomerSatisfaction"></div>
+            </div>
+          
+            
+        </section>
+        
+        </section>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>

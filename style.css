@@ -1,0 +1,149 @@
+*{
+margin: 0px;
+padding: 0px;
+}
+
+body{
+background-color: #747F8C;
+height:100vh;
+display: flex;
+align-items: center;
+justify-content:center;
+}
+.sistema{
+    height: 700px;
+    width: 1400px;
+    background-color: #1d1f20;
+    display: flex;
+    border-radius: 5px;
+    
+    
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#menu{
+    height: 100%;
+    background-color: #8D9AA6;
+}
+.navbnt{
+width: 100px;
+min-width: 50px;
+height: 100px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.navbnt>h2{
+color: white;
+text-transform: uppercase;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 10px;
+}
+
+#bnt_dashboard{
+background-color:#F2F2F2;;
+}
+
+
+#dashboard{
+    width: 100%;
+    height: 100%;
+    background-color:#F2F2F2;
+    padding-left: 50px;
+    padding-right: 50px;
+    overflow-y:scroll;
+}
+#inftop{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content:space-between;
+height: 100px;
+flex-wrap: wrap;
+
+
+}
+
+#inftop>h1{
+font-family: Arial, Helvetica, sans-serif;
+color: #595959;
+}
+#selectop>select{
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    
+}
+#OpInstitute{
+background-color:#717C88;
+color: white;
+}
+#database1{
+    border-radius: 15px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.CardDatabase1{
+height: 120px;
+width: 220px;
+margin-bottom: 10px;
+background-color: white;
+display: flex;
+align-items: center;
+justify-content:center;
+
+}
+.CardDatabase1>img{
+height: 30px;
+}
+.CardDatabase1>div>p{
+font-family: Arial, Helvetica, sans-serif;
+color: #828284;
+margin: 10px;
+}
+.NdataCard{
+font-size: 25px;
+}
+
+.SgraficosD1{
+ margin-top: 20px;
+display: flex;
+justify-content:space-between;
+}
+#ValueAnalysis{
+height: 450px;
+width: 550px;
+background-color: white;
+padding: 20px;
+}
+#graficos2e3{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+
+}
+#attendance{
+    height: 240px;
+    width: 550px;
+    background-color: white;
+}
+#CustomerSatisfaction{
+    height: 240px;
+    width: 550px;
+    background-color: white;
+}
+
+
+
+
+
+
+::-webkit-scrollbar-thumb{
+    display: none;
+}
+::-webkit-scrollbar{
+    background-color:#F2F2F2;
+    display: none;
+} 
