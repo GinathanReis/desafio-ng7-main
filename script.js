@@ -21,6 +21,7 @@ const ctx = document.getElementById('myChart');
 
 /*  Botão para abri a aba deshbor   */
 
+
 let dashboard = window.document.getElementById('dashboard')
 let bnt_dash = window.document.getElementById('bnt_dashboard')
 let imagem_dashboard = window.document.getElementById('imagem_dashboard')
@@ -33,6 +34,8 @@ let H2inst = window.document.getElementById('H2inst')
 let bntKPIS = window.document.getElementById('bntKPIS')
 let imagemKPIS = window.document.getElementById('imagemKPIS')
 let h2_KPIS = window.document.getElementById('h2_KPIS')
+
+let abaConfig = window.document.getElementById('abaConfig')
 
 
 function bnt_dashboard(){
@@ -87,4 +90,14 @@ function bnt_KPIs(){
   bntKPIS.style.background='#F2F2F2';
   imagemKPIS.style.filter = "none";
   h2_KPIS.style.color='#828284';
+}
+
+/*  Botão para abri e fechar a aba config  */
+
+function bntConfig(){
+  abaConfig.style.display='block';
+
+}
+function frecharconf(){
+  abaConfig.style.display='none';
 }
