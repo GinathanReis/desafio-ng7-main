@@ -24,7 +24,7 @@
             <div id="bnt_dashboard" class="navbnt" onclick="bnt_dashboard()">
                <img src="imagens/icone11.png
                " alt="" id="imagem_dashboard">
-               <h2 id="h2_bnt_dashboard" >Dashboard</h2>
+               <h2 id="h2_bnt_dashboard" >Clientes</h2>
             </div>
     
             <div class="navbnt" id="bntINS" onclick="bnt_institutions()" >
@@ -56,7 +56,8 @@
         </nav>
         <section  id="dashboard">
          <header id="inftop">
-            <h1> KPI Dashboard</h1>
+            
+            <h1>CLIENTES </h1> <img src="imagens/iconeCliente.png" alt="" id="iconeClienete">
             <div>
                 <div id="selectop" > 
                     <select id="OpInstitute" >
@@ -74,46 +75,31 @@
             </div>
          </header>
 
-        <section id="database1">
+         <section id="database1">
             <div class="CardDatabase1">
                 <img src="imagens/icone1.png" alt="">
                 <div>
-                    <p class="Ptextocardtop" > Current Students </p>
+                    <p class="Ptextocardtop" > Clientes homens </p>
                     <p id="NCurrentStudents" class="NdataCard"> 2,119 </p>
                 </div>
             </div>
             <div class="CardDatabase1">
                 <img src="imagens/icone2.png" alt="">
                 <div>
-                    <p class="Ptextocardtop" > Students Enrolled </p>
+                    <p class="Ptextocardtop" > Clientes Mulheres </p>
                     <p id="NStudentsEnrolled"  class="NdataCard" > 3,119 </p>
                 </div>
             </div>
             <div class="CardDatabase1">
                 <img src="imagens/icone3.png" alt="">
                 <div>
-                    <p class="Ptextocardtop" > Cumulative <br> Graduates</p>
+                    <p class="Ptextocardtop" > Não se indentificam como homen ou mulher 
                     <p id="CumulativeGraduates" class="NdataCard" > 20,867 </p>
                 </div>
             </div>
-            <div class="CardDatabase1">
-                <img src="imagens/icone4.png" alt="">
-                <div>
-                    <p class="Ptextocardtop" > Cumulative <br>
-                        Students Enrolled
-                    </p>
-                    <p id="NStudentsEnrolled" class="NdataCard" > 25,600 </p>
-                </div>
-            </div>
-            <div class="CardDatabase1">
-                <img src="imagens/icone5.png" alt="">
-                <div>
-                    <p class="Ptextocardtop" > Accreditationss</p>
-                    <p id="NCurrentStudents" class="NdataCard" > 12 </p>
-                </div>
-            </div>
-        </section>
-        <section class="SgraficosD1" >
+            
+         </section>
+         <section class="SgraficosD1" >
             <div>
                 <div id="ValueAnalysis">
                     <canvas id="myChart"></canvas>
@@ -121,15 +107,38 @@
             </div>
             <div id="graficos2e3">
                 <div id="attendance">
-                    <canvas id="myChart2"></canvas>
+                    <canvas id="myChart2">
+                        
+                    </canvas>
                 </div>
                 <div id="CustomerSatisfaction"></div>
             </div>
           
             
-        </section>
+         </section>
         
+
         </section>
+        <section id="Sdecrevendoafonte" >
+
+            <h1 class="textodafonte"> Dados gerados pela <strong> Random User Generator </strong>  </h1>
+
+            <p class="textodafonte">
+                
+A API Random User Generator é uma API que permite gerar dados de usuário aleatórios. Ela é comumente utilizada por desenvolvedores para criar dados fictícios de pessoas em seus aplicativos, testes ou demonstrações.
+
+Essa API fornece uma interface simples e conveniente para acessar informações aleatórias de usuário, como nome, sobrenome, gênero, data de nascimento, endereço, número de telefone, endereço de e-mail e muito mais. Esses dados são gerados aleatoriamente de acordo com os parâmetros fornecidos.
+
+A API Random User Generator oferece uma ampla gama de opções de personalização para atender às necessidades específicas dos desenvolvedores. Por exemplo, é possível especificar o número de usuários a serem gerados, o país de origem dos usuários, o formato dos resultados (JSON, CSV, etc.), a inclusão de imagens de perfil e muitas outras opções.
+            </p>
+
+
+<p  class="textodafonte">Documentaçao da API usada : <a href="https://randomuser.me/documentation" target="_blank"> https://randomuser.me/documentation  </a>
+
+        </section>
+
+
+
     </div>
 
 <div id="abaConfig">

@@ -18,7 +18,7 @@ justify-content:center;
     display: flex;
     border-radius: 5px;
     background-color: #F2F2F2;
-    
+    border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 #menu{
@@ -62,6 +62,7 @@ font-size: 7px;
     background-color:#F2F2F2;
     color: #828284;
     
+    
 }
 
 
@@ -76,11 +77,15 @@ font-size: 7px;
     
 }
 
+#iconeClienete{
+    height: 50px;
+}
+
 #inftop{
 display: flex;
 flex-direction: row;
 align-items: center;
-justify-content:space-between;
+justify-content:flex-start;
 height: 100px;
 flex-wrap: wrap;
 
@@ -89,13 +94,14 @@ flex-wrap: wrap;
 
 #inftop>h1{
 font-family: Arial, Helvetica, sans-serif;
-color: #595959;
+color: #828284;
 }
 #selectop>select{
     margin: 5px;
     padding: 10px;
     border-radius: 10px;
     border: none;
+    display: none;
     
 }
 #OpInstitute{
@@ -108,11 +114,13 @@ color: white;
     justify-content:space-around;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 20px;
     
 }
 .CardDatabase1{
+width: 255px;
 height: 90px;
-width: 160px;
+padding: 20px;
 margin-bottom: 10px;
 background-color: white;
 display: flex;
@@ -120,15 +128,28 @@ align-items: center;
 justify-content:center;
 animation: bounceIn;
 animation-duration: 0.5s;
+cursor: pointer;
+border-radius: 5px;
+box-shadow: rgba(66, 51, 99, 0) 0
+     2px 4px,rgba(45, 35, 66, 0) 0 7px 13px 3px,#D6D6E7 0 -3px  inset;
+}
+
+
+.CardDatabase1:hover{
+    background-color: rgba(255, 255, 255, 0.593);
+    transform: scale(1.1);
+    transition: 0.2s;
+    box-shadow: rgba(45, 35, 66, 0.4) 0
+     2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px 3px,#D6D6E7 0 -3px  inset;
+    
 }
 .Ptextocardtop{
-font-size: 12px;
+font-size: 15px;
 margin: 10px;
 }
 .CardDatabase1>img{
-height: 30px;
-animation: bounceIn;
-animation-duration: 2s;
+height: 50px;
+
 }
 .CardDatabase1>div>p{
 font-family: Arial, Helvetica, sans-serif;
@@ -137,7 +158,7 @@ color: #828284;
 
 }
 .NdataCard{
-font-size: 15px;
+font-size: 20px;
 margin: 10px;
 font-weight: bolder;
 }
@@ -157,8 +178,22 @@ max-width: 450px;
 background-color: white;
 padding: 20px;
 margin-bottom: 10px;
-
+animation:pulse;
+animation-duration: 0.5s;
+cursor: pointer;
+border-radius: 5px;
+box-shadow: rgba(45, 35, 66, 0) 0
+     2px 4px,rgba(45, 35, 66, 0) 0 7px 13px 3px,#D6D6E7 0 -3px  inset;
 }
+
+#ValueAnalysis:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+
+    box-shadow: rgba(45, 35, 66, 0.4) 0
+     2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px 3px,#D6D6E7 0 -3px  inset;
+}
+
 #graficos2e3{
 display: flex;
 flex-direction: column;
@@ -168,15 +203,31 @@ max-width: 450px;
 
 }
 #attendance{
-    height: 120px;
-    
+    margin: 5px;
+    height: 250px;
     background-color: white;
     
 }
 #CustomerSatisfaction{
     height: 120px;
-
+    display: none;
     background-color: white;
+}
+
+#Sdecrevendoafonte{
+
+    padding: 30px;
+    display: none;
+    
+
+}
+
+
+
+.textodafonte{
+    color: #828284;
+font-family: Arial, Helvetica, sans-serif;
+margin: 5px;
 }
 
 
@@ -188,7 +239,7 @@ max-width: 450px;
     max-width: 500px;
     background-color:#ffffff;
     border-radius: 5px;
-    display: none;
+   
     animation: bounceIn;
     animation-duration: 0.5s;
     box-shadow: rgba(45, 35, 66, 0.4) 0
