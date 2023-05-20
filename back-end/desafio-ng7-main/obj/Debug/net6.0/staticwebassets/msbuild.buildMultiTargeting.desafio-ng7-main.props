@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\desafio-ng7-main.props" />
+</Project>

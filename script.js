@@ -1,4 +1,5 @@
 const ctx = document.getElementById('myChart');
+const ctx2 = document.getElementById('myChart2');
 
 /*  Botão para abri a aba deshbor   */
 
@@ -113,7 +114,14 @@ async function InicializaChamadas(){
 
       new gridjs.Grid({
         columns: ["Nome", "Sobrenome", "Idade", "Email", "Telefone"],
-        data: dataColuna
+        data: dataColuna,
+        resizable: true,
+        sort: true,
+        search: true,
+        pagination: {
+          limit: 6
+        },
+        fixedHeader: true,
       }).render(document.getElementById("wrapper"))
 
     })
