@@ -1,139 +1,159 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
-<body>
+
+<body onload="InicializaChamadas()">
     <div class="sistema">
-        <nav id="menu" >
-        <div>
-            <div id="bnt_logo" class="navbnt">
-                <img src="imagens/logo.png" alt="">
-               
-    
-            </div>
-            <div id="bnt_dashboard" class="navbnt" onclick="bnt_dashboard()">
-               <img src="imagens/icone11.png
+        <nav id="menu">
+            <div>
+                <div id="bnt_logo" class="navbnt">
+                    <img src="imagens/logo.png" alt="">
+
+                </div>
+                <div id="bnt_dashboard" class="navbnt" onclick="bnt_dashboard()">
+                    <img src="imagens/icone11.png
                " alt="" id="imagem_dashboard">
-               <h2 id="h2_bnt_dashboard" >Clientes</h2>
-            </div>
-    
-            <div class="navbnt" id="bntINS" onclick="bnt_institutions()" >
-                <img src="imagens/icone6.png" alt="" id="imagemInst" >
-                <h2 id="H2inst"> institutions </h2>
-            </div>
-    
-            <div class="navbnt" id="bntKPIS" onclick="bnt_KPIs()">
-                <img src="imagens/icone7.png" alt="" id="imagemKPIS">
-                <h2 id="h2_KPIS"> KPIs</h2>
+                    <h2 id="h2_bnt_dashboard">Clientes</h2>
+                </div>
+
+                <div class="navbnt" id="bntINS" onclick="bnt_institutions()">
+                    <img src="imagens/icone6.png" alt="" id="imagemInst">
+                    <h2 id="H2inst"> institutions </h2>
+                </div>
+
+                <div class="navbnt" id="bntKPIS" onclick="bnt_KPIs()">
+                    <img src="imagens/icone7.png" alt="" id="imagemKPIS">
+                    <h2 id="h2_KPIS"> KPIs</h2>
+                </div>
+
             </div>
 
-        </div>
-        
 
-        <div>
-            <div  class="navbnt" id="bntConfig" onclick="bntConfig()">
-                <img src="imagens/icone8.png" alt="">
+            <div>
+                <div class="navbnt" id="bntConfig" onclick="bntConfig()">
+                    <img src="imagens/icone8.png" alt="">
+                </div>
+                <div class="navbnt">
+                    <img src="imagens/icone9.png" alt="" id="bnt_Alert">
+                </div>
+                <div class="navbnt"><img src="imagens/icone10.png" alt="" id="bnt_perfil"></div>
             </div>
-            <div class="navbnt">
-                <img src="imagens/icone9.png" alt="" id="bnt_Alert">
-            </div>
-            <div class="navbnt"><img src="imagens/icone10.png" alt="" id="bnt_perfil"></div>
-        </div>
 
-            
-        
+
+
 
         </nav>
-        <section  id="dashboard">
-         <header id="inftop">
-            
-            <h1>CLIENTES </h1> <img src="imagens/iconeCliente.png" alt="" id="iconeClienete">
-            <div>
-                <div id="selectop" > 
-                    <select id="OpInstitute" >
-                        <option value="">Institute</option>
-                        <option value="">2019-2020</option>
-                        <option value="">2021-2023</option>                      
-                      </select>
-                      <select id="Opdata">
-                        <option value="">2017-2018</option>
-                        <option value="">2019-2020</option>
-                        <option value="">2021-2023</option>                      
-                      </select>
+        <section id="dashboard">
+            <header id="inftop">
+
+                <h1>CLIENTES </h1> <img src="imagens/iconeCliente.png" alt="" id="iconeClienete">
+                <div>
+                    <div id="selectop">
+                        <select id="OpInstitute">
+                            <option value="">Institute</option>
+                            <option value="">2019-2020</option>
+                            <option value="">2021-2023</option>
+                        </select>
+                        <select id="Opdata">
+                            <option value="">2017-2018</option>
+                            <option value="">2019-2020</option>
+                            <option value="">2021-2023</option>
+                        </select>
+                    </div>
+                </div>
+            </header>
+
+            <section id="database1">
+                <div class="CardDatabase1">
+                    <img src="imagens/icone1.png" alt="">
+                    <div>
+                        <p class="Ptextocardtop"> Clientes homens </p>
+                        <p id="ClientesHomens" class="NdataCard"></p>
+                    </div>
+                </div>
+                <div class="CardDatabase1">
+                    <img src="imagens/icone2.png" alt="">
+                    <div>
+                        <p class="Ptextocardtop"> Clientes Mulheres </p>
+                        <p id="ClientesMulheres" class="NdataCard"></p>
+                    </div>
+                </div>
+                <div class="CardDatabase1">
+                    <img src="imagens/icone10.png" alt="">
+                    <div>
+                        <p class="Ptextocardtop"> Total de Clientes </p>
+                        <p id="ClientesTotais" class="NdataCard"></p>
+                    </div>
                 </div>
 
-            </div>
-         </header>
+            </section>
+            <section class="SgraficosD1">
+                
 
-         <section id="database1">
-            <div class="CardDatabase1">
-                <img src="imagens/icone1.png" alt="">
+
                 <div>
-                    <p class="Ptextocardtop" > Clientes homens </p>
-                    <p id="NCurrentStudents" class="NdataCard"> 2,119 </p>
+                    <div id="ValueAnalysis">
+                        <canvas id="myChart"></canvas>
+                    </div>
                 </div>
-            </div>
-            <div class="CardDatabase1">
-                <img src="imagens/icone2.png" alt="">
                 <div>
-                    <p class="Ptextocardtop" > Clientes Mulheres </p>
-                    <p id="NStudentsEnrolled"  class="NdataCard" > 3,119 </p>
+                    <div id="ValueAnalysis">
+                        <canvas id="myChart2"></canvas>
+                    </div>
                 </div>
-            </div>
-            <div class="CardDatabase1">
-                <img src="imagens/icone3.png" alt="">
                 <div>
-                    <p class="Ptextocardtop" > Não se indentificam como homen ou mulher 
-                    <p id="CumulativeGraduates" class="NdataCard" > 20,867 </p>
+                    <div id="ValueAnalysis">
+                        <p > Mulheres maiores de idade </p>
+                        <!-- <ul class="list-group" id="lista"></ul> -->
+                        <div id="wrapper"></div>
+                    </div>
                 </div>
-            </div>
-            
-         </section>
-         <section class="SgraficosD1" >
-            <div>
-                <div id="ValueAnalysis">
-                    <canvas id="myChart"></canvas>
-                </div>
-            </div>
-            <div id="graficos2e3">
-                <div id="attendance">
-                    <canvas id="myChart2">
-                        
-                    </canvas>
-                </div>
-                <div id="CustomerSatisfaction"></div>
-            </div>
-          
-            
-         </section>
-        
+
+
+            </section>
+
 
         </section>
-        <section id="Sdecrevendoafonte" >
+        <section id="Sdecrevendoafonte">
 
-            <h1 class="textodafonte"> Dados gerados pela <strong> Random User Generator </strong>  </h1>
+            <h1 class="textodafonte"> Dados gerados pela <strong> Random User Generator </strong> </h1>
 
             <p class="textodafonte">
-                
-A API Random User Generator é uma API que permite gerar dados de usuário aleatórios. Ela é comumente utilizada por desenvolvedores para criar dados fictícios de pessoas em seus aplicativos, testes ou demonstrações.
 
-Essa API fornece uma interface simples e conveniente para acessar informações aleatórias de usuário, como nome, sobrenome, gênero, data de nascimento, endereço, número de telefone, endereço de e-mail e muito mais. Esses dados são gerados aleatoriamente de acordo com os parâmetros fornecidos.
+                A API Random User Generator é uma API que permite gerar dados de usuário aleatórios. Ela é comumente
+                utilizada por desenvolvedores para criar dados fictícios de pessoas em seus aplicativos, testes ou
+                demonstrações.
 
-A API Random User Generator oferece uma ampla gama de opções de personalização para atender às necessidades específicas dos desenvolvedores. Por exemplo, é possível especificar o número de usuários a serem gerados, o país de origem dos usuários, o formato dos resultados (JSON, CSV, etc.), a inclusão de imagens de perfil e muitas outras opções.
+                Essa API fornece uma interface simples e conveniente para acessar informações aleatórias de usuário,
+                como nome, sobrenome, gênero, data de nascimento, endereço, número de telefone, endereço de e-mail e
+                muito mais. Esses dados são gerados aleatoriamente de acordo com os parâmetros fornecidos.
+
+                A API Random User Generator oferece uma ampla gama de opções de personalização para atender às
+                necessidades específicas dos desenvolvedores. Por exemplo, é possível especificar o número de usuários a
+                serem gerados, o país de origem dos usuários, o formato dos resultados (JSON, CSV, etc.), a inclusão de
+                imagens de perfil e muitas outras opções.
             </p>
 
 
-<p  class="textodafonte">Documentaçao da API usada : <a href="https://randomuser.me/documentation" target="_blank"> https://randomuser.me/documentation  </a>
+            <p class="textodafonte">Documentaçao da API usada : <a href="https://randomuser.me/documentation"
+                    target="_blank"> https://randomuser.me/documentation </a>
+
+        </section>
+
+        <section id="AbaKpis">
+            oaerhboaiernbioãenboiãrnboparn]
 
         </section>
 
@@ -141,31 +161,44 @@ A API Random User Generator oferece uma ampla gama de opções de personalizaç�
 
     </div>
 
-<div id="abaConfig">
-<nav> <button class="button-30" role="button" onclick="frecharconf()">X</button> </nav>
+    <div id="abaConfig">
+        <nav> <button class="button-30" role="button" onclick="frecharconf()">X</button> </nav>
 
-<p>
-    Projeto Realizado por <strong>Gilnathan De araujo Reis, </strong> Afim de Realizar o desafio proposto pela empresa <strong>NG7</strong> 
-</p>
+        <p>
+            Projeto Realizado por <strong>Gilnathan De araujo Reis, </strong> Afim de Realizar o desafio proposto pela
+            empresa <strong>NG7</strong>
+        </p>
 
-<p>
-O objetivo do projeto é analisar os dados dos clientes de uma determinada entidade, a fim de obter insights sobre seu público-alvo e comportamento demográfico.
-</p>
+        <p>
+            O objetivo do projeto é analisar os dados dos clientes de uma determinada entidade, a fim de obter insights
+            sobre seu público-alvo e comportamento demográfico.
+        </p>
 
-<footer id="redesconfg">
-    <a href="https://www.linkedin.com/in/gilnathan-reis-50ba67238/" target="_blank"><button class="bntrede">
-        <span>Linkedin</span>
-        
-    </button></a>
-    <a href="https://github.com/GinathanReis" target="_blank">
-        <button class="bntrede">
-            <span>GitHub</span>
-        </button>
-    </a>
-</footer>
+        <footer id="redesconfg">
+            <a href="https://www.linkedin.com/in/gilnathan-reis-50ba67238/" target="_blank"><button class="bntrede">
+                    <span>Linkedin</span>
 
-</div>
+                </button></a>
+            <a href="https://github.com/GinathanReis" target="_blank">
+                <button class="bntrede">
+                    <span>GitHub</span>
+                </button>
+            </a>
+        </footer>
 
-<script src="script.js"></script>
+    </div>
+
+    <script src="script.js"></script>
+    <script type="module">
+        import {
+            Grid,
+            html
+        } from "https://unpkg.com/gridjs?module";
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/gridjs/dist/gridjs.umd.js"></script>
+    <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
 </body>
+
 </html>
